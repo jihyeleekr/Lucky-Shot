@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500&display=swap');
+@media (min-width: 2560px) {
+  :root{
+    --greating-font-size: 8em;
+    --navbar-font-size: 20px;
+    --numbers-font-size: 45px;
+    --button-font-size: 16px;  
+    --button-padding: 6px 32px;
+    --section-bottom-padding: 320px;
+    --num-padding: 100px;
+    --button-margin: 50%;
+  }
+}
+@media (min-width: 375px) {
+  :root {
+    --greeting-font-size: 3em;
+    --navbar-font-size: 20px;
+    --numbers-font-size: 25px;
+    --button-font-size: 16px;  
+    --button-padding: 6px 16px;
+    --section-bottom-padding: 250px;
+    --num-padding: 70px;
+    --button-margin:110px;
+  }
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  padding:  0;
+  margin:0;
+  font-family: "Alegreya Sans", sans-serif;
+  background-image: url('assets/background.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+  }
+
+li{
+  display: inline;
+}
+  
+a {
+  padding: 3px;
+  justify-content: space-between;
+  color: white;
+  font-size: var(--navbar-font-size)
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+}
+
+.navbar{
+  padding: 10px 10px;
+  margin: auto;   
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navitem{
+  padding-top: 5px;
+}
+
+.navbar ul li a {
+  position: relative;
+}
+
+.navbar ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: black;
+  height: 1px;
+}
+
+.navbar ul li a:hover:after {
+  width: 100%;
+}
+
+.home_message .greeting{
+  text-align: center;
+  color:white;
+  padding-top:200px;
+  font-size: var(--greeting-font-size);
+}
+.home{
+  padding-bottom: var(--section-bottom-padding);
+}
+
+.powerball{
+  margin-top: 200px;
+  margin-bottom: 400px;
+}
+
+button{
+  background-color: rgb(188, 135, 241);
+  border: none;
+  color: white;
+  padding: var(--button-padding);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--button-font-size);
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(220, 187, 252);
+  color:black;
+}
+
+.powerball_button{
+  justify-content: space-between;
+}
+
+.powerballimg{
+  padding-left: 30px;
+  padding-top: 20px;
+  max-width: 100%;
+}
+.powerball_item{
+  margin-left: var(--button-margin);
+}
+
+.nums{
+  text-align: center;
+  font-size: var(--numbers-font-size);
+  width: 30em;
+  max-width: 100%;
+  padding-top: var(--num-padding);
+  padding-bottom: var(--num-padding);
+}
+.nums p{
+  display: inline-block; 
+  max-width: 50%; 
+  padding:10px;
+  color: white;
+}
+
+.megamillion{
+
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.megamillionimg{
+  padding-left: 30px;
+  width: 300px;
+  height: 100px;
+  max-width: 100%;
+}
+
+.numsm{
+  text-align: center;
+  font-size: var(--numbers-font-size);
+  width: 30em;
+  max-width: 100%;
+  padding-top: var(--num-padding);
+  padding-bottom: var(--num-padding);
+}
+
+.numsm p{
+  display: inline-block; 
+  max-width: 50%; 
+  padding:10px;
+  color: white;
+}
+
+.megamillion_button{
+  justify-content: space-evenly;
+}
+
+
+.megamillion_item{
+  margin-left: var(--button-margin);
+}
+
+
+
